@@ -6,9 +6,8 @@ Decrypts the ClCertA files.
 
 1. Get ClCertA (TitleID 0004001b00010002). If you get it from the CDN, remember to
    decrypt it with its decrypted titlekey in AES-128-CBC mode.
-2. Decrypt the ClCertA CFA with the tool of your choice. Decrypt9 and 3DS Multi
+2. Decrypt the ClCertA CFA with the tool of your choice. Decrypt9, rxTools and 3DS Multi
    Decryptor both work as well.
-   [rxTools doesn`t work](https://github.com/roxas75/rxTools/issues/89).
 3. Use ctrtool to extract the RomFS from the decrypted ClCertA CFA.
 4. Compile ccrypt. This requires devkitPro and devkitARM or any regular
    cross-compiling gcc targeting arm-none-eabi.
